@@ -483,19 +483,19 @@ textarea {
   padding-bottom: 94px;
 }
 
-.section-work .img {
+.img {
   display: flex;
 }
 
-.img .item:not(:last-child) {
+.img__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-work .item {
+.img__item {
   position: relative;
 }
 
-.section-work .item-title {
+.img__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -504,7 +504,7 @@ textarea {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.item-text {
+.img__text {
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
