@@ -694,6 +694,10 @@ textarea {
   width: 370px;
 }
 
+.projects .item {
+  flex-basis: calc((100% - 60px) * 30px / 3);
+}
+
 .projects .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
