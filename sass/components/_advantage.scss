@@ -1,3 +1,7 @@
+.advantage {
+    @extend %section;
+}
+
 .advantage__container {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -14,7 +18,7 @@
 }
 
 .advantage__list {
-    @extend .list;
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
 }

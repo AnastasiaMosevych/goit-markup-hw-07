@@ -13,6 +13,21 @@
   --hero-background: #C4C4C4;
 }
 
+.address-list, .social-list, .projects, .filter, .client-list, .img, .advantage__list, .contacts, .site-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.address-list__link, .social-list__link, .projects__link, .contacts__link, .site-nav__link {
+  text-decoration: none;
+}
+
+.projects-section, .clients, .section-work, .advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -39,12 +54,6 @@ img {
   height: auto;
 }
 
-.list, .client-list, .advantage__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -53,21 +62,12 @@ img {
   padding-right: 15px;
 }
 
-.link, .projects__link, .contacts__link, .site-nav__link {
-  text-decoration: none;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section__title {
@@ -618,19 +618,17 @@ textarea {
   border-radius: 4px;
   padding: 6px 25px;
   min-width: 73px;
-  background-color: var(--primary-background-color);
-  color: var(--title-text-color);
-  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  background-color: var(--primary-background-color);
+  color: var(--title-text-color);
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filter__button:hover,
-.filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   background-color: var(--accent-color);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -751,30 +749,6 @@ textarea {
   text-decoration: none;
 }
 
-.footer .link, .footer .site-nav__link, .footer .contacts__link, .footer .projects__link {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer .link:hover, .footer .site-nav__link:hover, .footer .contacts__link:hover, .footer .projects__link:hover,
-.footer .link:focus,
-.footer .site-nav__link:focus,
-.footer .contacts__link:focus,
-.footer .projects__link:focus {
-  color: var(--primary-background-color);
-}
-
-.address-list .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.address {
-  margin-top: 20px;
-  font-style: inherit;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
 .footer-social {
   display: flex;
   flex-direction: column;
@@ -782,7 +756,24 @@ textarea {
   margin-left: 70px;
 }
 
-.footer-social .social-link {
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,31 +783,17 @@ textarea {
   height: 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-social .social-link svg {
-  fill: var(--white);
-}
-
-.footer-social .social-link:hover,
-.footer-social .social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-social .social-item:not(:last-child) {
-  margin-right: 10px;
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social {
-  display: flex;
-  margin-top: 20px;
-}
-
-.footer-title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white);
+.social-list__link .social-list__icon {
+  fill: var(--white);
 }
 
 .footer-form {
@@ -853,4 +830,23 @@ textarea {
 
 .form-svg {
   margin-left: 10px;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address-list__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-list__link:hover, .address-list__link:focus {
+  color: var(--primary-background-color);
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 .contacts {
+    @extend %list;
     display: flex;
     margin-left: auto;
 }
@@ -8,7 +9,7 @@
 }
 
 .contacts__link {
-    @extend .link;
+    @extend %link;
     display: flex;
     align-items: center;
     color: var(--primary-text-color);

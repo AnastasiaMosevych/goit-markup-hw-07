@@ -1,5 +1,9 @@
+.clients {
+    @extend %section;
+}
+
 .client-list {
-    @extend .list;
+    @extend %list;
     display: flex;
 }
 
