@@ -1,4 +1,10 @@
-.section-team .photos {
+.section-team {
+    @extend %section;
+    background-color: var(--primary-background-color);
+}
+
+.photos {
+    @extend %list;
     display: flex;
 }
 
@@ -43,11 +49,8 @@
     color: var(--title-text-color);
 }
 
-.section-team {
-    background-color: var(--primary-background-color);
-}
-
 .team-social {
+    @extend %list;
     display: flex;
     justify-content: center;
 }
