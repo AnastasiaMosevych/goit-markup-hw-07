@@ -39,10 +39,9 @@
 }
 
 .modal-form__title {
+    @include font(20px, 700, 1.15);
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+   
     text-align: center;
     color: var(--title-text-color);
 }
@@ -114,10 +113,10 @@ textarea {
 }
 
 .checkbox-label {
+    @include flex-centered();
+    
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     margin-bottom: 30px;
 }
 

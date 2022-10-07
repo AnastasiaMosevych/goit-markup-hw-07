@@ -10,12 +10,10 @@
 }
 
 .footer-studio {
+    @include font(26px, 700, 1.12);
     color: var(--primary-background-color);
 
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.12;
 
     text-decoration: none;
 }
@@ -30,10 +28,10 @@
 }
 
 .footer-title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
+    @include font(14px, 700, 1.14);
+
     text-transform: uppercase;
+
     color: var(--white);
 }
 
@@ -48,10 +46,9 @@
 }
 
 .social-list__link {
+    @include flex-centered();
     @extend %link;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
@@ -80,7 +77,22 @@
     margin-left: 93px;
 }
 
-.footer-input {
+.form {
+    display: flex;
+}
+
+.form-title {
+    @include font(14px, 700, 1.14);
+
+    margin-bottom: 20px;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+.form__input {
     display: flex;
 
     min-width: 358px;
@@ -103,20 +115,6 @@
         }
 }
 
-.form-title {
-    margin-bottom: 20px;
-    color: var(--white);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.form {
-    display: flex;
-}
-
-.form-svg {
+.form__icon {
     margin-left: 10px;
 }
